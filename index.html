@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Not-Youtube</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">logo</div>
-        <div class="search-bar">search bar</div>
-        <div class="profile"> profile icon</div>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <span style="color: black; margin-right: 30px; margin-left: 10px">
+          <i class="fas fa-bars"></i>
+        </span>
+
+        <span style="color: red">
+          <i class="fa-brands fa-youtube fa-2x"></i>
+        </span>
+        not-YouTube
+      </div>
+      <div class="search-section">
+        <form class="search-bar">
+          <input class="search-input" id="search-input" placeholder="Type here to search, but it just prototype " type="text" onfocus="checkInput()"  />
+          <button class="search-button" id="search-button">
+            <span style="background-color: white; color: black; font-size: 21px; text-align: center; align-items: center">
+              <i class="fas fa-magnifying-glass"></i>
+            </span>
+          </button>
+        </form>
+      </div>
+      <div class="profile">profile icon</div>
     </nav>
     <div class="main-section">
-        This will be the main section where the video player, suggested video and comments
+      <div class="main-feature">
         <div class="video-section">will be video player</div>
-        <div class="suggested-video">will be suggested video</div>
-        <div class="comment-section"></div>
+        <div class="comment-section">will be comment section</div>
+      </div>
+      <div class="suggested-video">will be suggested video</div>
     </div>
 
+    <script>
+      var input = document.getElementById("search-input");
 
-</body>
+      function checkInput() {
+        var elementToHide = document.getElementById("search-button");
+        if (input.focus) {
+            console.log("sembunyi")
+            elementToHide.style.display = "none";
+        } else {
+            elementToHide.style.display = "inline";
+            console.log("muncul")
+        }
+      }
+    </script>
+  </body>
 </html>
