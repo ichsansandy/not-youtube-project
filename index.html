@@ -22,37 +22,59 @@
       </div>
       <div class="search-section">
         <form class="search-bar">
-          <input class="search-input" id="search-input" placeholder="Type here to search, but it just prototype " type="text" onfocus="checkInput()"  />
+          <input class="search-input" id="search-input" placeholder="Type here to search, but it just prototype " type="text" onfocus="checkInput()" />
           <button class="search-button" id="search-button">
-            <span style="background-color: white; color: black; font-size: 21px; text-align: center; align-items: center">
+            <span style="background-color: red; color: white; font-size: 21px; text-align: center; align-items: center; padding: auto">
               <i class="fas fa-magnifying-glass"></i>
             </span>
           </button>
         </form>
       </div>
-      <div class="profile">profile icon</div>
+      <div class="profile">
+        <span class="round">
+          <i class="fas fa-bell"></i>
+        </span>
+        <span class="round">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
     </nav>
     <div class="main-section">
       <div class="main-feature">
-        <div class="video-section">will be video player</div>
+        <div class="video-section">
+          <iframe
+            width="85%"
+            height="100%"
+            src="https://www.youtube.com/embed/lkIFF4maKMU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <h1>This is the title of the video</h1>
+          <div class="video-owner">
+            <span class="round">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
         <div class="comment-section">will be comment section</div>
       </div>
       <div class="suggested-video">will be suggested video</div>
     </div>
 
     <script>
-      var input = document.getElementById("search-input");
+      //   var input = document.getElementById("search-input");
 
-      function checkInput() {
-        var elementToHide = document.getElementById("search-button");
-        if (input.focus) {
-            console.log("sembunyi")
-            elementToHide.style.display = "none";
-        } else {
-            elementToHide.style.display = "inline";
-            console.log("muncul")
-        }
-      }
+      //   function checkInput() {
+      //     var elementToHide = document.getElementById("search-button");
+      //     if (input.focus) {
+      //         console.log("sembunyi")
+      //         elementToHide.style.display = "none";
+      //     } else {
+      //         elementToHide.style.display = "inline";
+      //         console.log("muncul")
+      //     }
+      //   }
     </script>
   </body>
 </html>
