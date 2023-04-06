@@ -14,10 +14,16 @@ i {
   cursor: pointer;
 }
 
+button:hover{
+  opacity: 0.4;
+}
+
 /* Navbar Start */
 .navbar {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0 0 0.2px ;
+  
 }
 
 .logo {
@@ -25,7 +31,7 @@ i {
   align-items: center;
   gap: 5px;
   padding: 5px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
 }
@@ -66,14 +72,14 @@ i {
 
 /* Profile Section Start */
 .round {
-  font-size: x-large;
+  font-size: 18px;
   background-color: gray;
   padding: 10px;
   text-align: center;
   border-radius: 50%;
   color: white;
-  width: 27px;
-  height: 27px;
+  width: 20px;
+  height: 20px;
 }
 
 .profile {
@@ -88,18 +94,21 @@ i {
 
 /* Navbar End */
 
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 /* Main Section Start */
 .main-section {
-  background-color: red;
+  width: 1300px;
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 .main-feature {
-  width: 75%;
-  background-color: aqua;
+  width: 1000px;
 }
 
 /* video  section start */
@@ -107,14 +116,18 @@ i {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 90vh;
-  margin: 20px;
+  height: 85vh;
+}
+.video-footer{
+  display: flex;
+  padding: 5px;
+  gap: 10px;
 }
 /* video  section end */
 
 /* suggested video section start */
 .suggested-video {
-  width: 25%;
+  width: 300px;
 }
 /* suggested video section end */
 /* Main Section End */

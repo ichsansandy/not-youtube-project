@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Not-Youtube</title>
+    <title>not-Youtube</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script>
   </head>
@@ -39,42 +40,60 @@
         </span>
       </div>
     </nav>
-    <div class="main-section">
-      <div class="main-feature">
-        <div class="video-section">
-          <iframe
-            width="85%"
-            height="100%"
-            src="https://www.youtube.com/embed/lkIFF4maKMU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h1>This is the title of the video</h1>
-          <div class="video-owner">
-            <span class="round">
-              <i class="fas fa-user"></i>
-            </span>
+    <div class="container">
+      <div class="main-section">
+        <div class="main-feature">
+          <div class="video-section">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/lkIFF4maKMU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <h2>100+ JavaScript Concepts you Need to Know</h2>
+            <div style="display: flex; justify-content: space-between;align-items: center;">
+              <div class="video-footer">
+                <span class="round" style="display: block">
+                  <i class="fas fa-user"></i>
+                </span>
+                <div style="display: flex; flex-direction: column; margin-left: 5px; justify-content: center">
+                  <h3>Fireship</h3>
+                  <p>300k Subscriber</p>
+                </div>
+                <button style="cursor: pointer; border-radius: 25px; padding: 5px 15px; font-size: medium; background-color: red; color: white; border: none">Subscribe</button>
+              </div>
+              <div style="margin-right: 10px">
+                <button style="cursor: pointer; border-radius: 25px; padding: 5px 15px; font-size: medium; background-color: red; color: white; border: none">
+                  <i class="fas fa-thumbs-up"></i> 43k
+                </button>
+                <button style="cursor: pointer; border-radius: 25px; padding: 5px 15px; font-size: medium; background-color: red; color: white; border: none">
+                  <i class="fas fa-thumbs-down"></i> 
+                </button>
+                <button style="cursor: pointer; border-radius: 25px; padding: 5px 15px; font-size: medium; background-color: red; color: white; border: none">
+                  <i class="fas fa-download"></i> Download
+                </button>
+                <button style="cursor: pointer; border-radius: 25px; padding: 5px 15px; font-size: medium; background-color: red; color: white; border: none">
+                  <i class="fas fa-money-check-dollar"></i> Thanks
+                </button>
+                <button style="cursor: pointer; border-radius: 25px; padding: 5px 15px; font-size: medium; background-color: red; color: white; border: none">
+                  <span style="font-size: 6px; font-weight: lighter; text-align: center;">
+                     <i class="fas fa-circle" ></i>
+                     <i class="fas fa-circle" ></i>
+                     <i class="fas fa-circle" ></i>
+                  </span> 
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: gray; color: white; border-radius: 20px; height: 9vh;padding: 5px 15px; margin: 20px 0px; ">
+            891k views 4 months ago 
+
           </div>
         </div>
-        <div class="comment-section">will be comment section</div>
+        <div class="suggested-video">will be suggested video</div>
       </div>
-      <div class="suggested-video">will be suggested video</div>
     </div>
-
-    <script>
-      //   var input = document.getElementById("search-input");
-
-      //   function checkInput() {
-      //     var elementToHide = document.getElementById("search-button");
-      //     if (input.focus) {
-      //         console.log("sembunyi")
-      //         elementToHide.style.display = "none";
-      //     } else {
-      //         elementToHide.style.display = "inline";
-      //         console.log("muncul")
-      //     }
-      //   }
-    </script>
   </body>
 </html>
