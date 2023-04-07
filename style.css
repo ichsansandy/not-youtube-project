@@ -103,12 +103,12 @@ button:hover{
 
 /* Main Section Start */
 .main-section {
-  width: 1300px;
+  width: 85%;
   display: flex;
 }
 
 .main-feature {
-  width: 1000px;
+  width: 75%;
 }
 
 /* video  section start */
@@ -118,6 +118,19 @@ button:hover{
   gap: 10px;
   height: 85vh;
 }
+/* .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
 .video-footer{
   display: flex;
   padding: 5px;
@@ -127,7 +140,21 @@ button:hover{
 
 /* suggested video section start */
 .suggested-video {
-  width: 300px;
+  width: 25%;
+  background-color: antiquewhite;
+  margin-left: 10px;
+}
+
+.list-tag-video-container{
+  display: flex;
+  gap: 10px;
+}
+.tag-video{
+  font-size: medium;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 12px;
+  background-color: #5a5a5a;
 }
 /* suggested video section end */
 /* Main Section End */
